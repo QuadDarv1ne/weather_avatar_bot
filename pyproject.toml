@@ -1,0 +1,32 @@
+[project]
+name = "weather-avatar-bot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Maxim Dupley",email = "maksimqwe42@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pendulum (>=3.1.0,<4.0.0)",
+    "customtkinter (>=5.2.2,<6.0.0)",
+    "sqlalchemy (>=2.0.41,<3.0.0)",
+    "pymongo (>=4.13.2,<5.0.0)",
+    "flet (>=0.28.3,<0.29.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "pandas (>=2.3.1,<3.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=6.30.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+black = "^25.1.0"
+mypy = "^1.17.0"
+
